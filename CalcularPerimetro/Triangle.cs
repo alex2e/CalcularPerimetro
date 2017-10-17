@@ -57,6 +57,7 @@ namespace CalcularPerimetro
         public Triangle(float baseTriangle, float height)
         {
             BaseTriangle = baseTriangle;
+            Height = height;
         }
         /// <summary>
         /// Calculate perimeter
@@ -72,7 +73,7 @@ namespace CalcularPerimetro
         /// <returns>Return float area</returns>
         public override float CalculateArea()
         {
-            return baseTriangle*Perimeter/2;
+            return (baseTriangle*Perimeter)/2;
         }
         #endregion
 

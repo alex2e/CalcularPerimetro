@@ -23,7 +23,7 @@ namespace CalcularPerimetro
         /// <summary>
         /// Rectangle base property
         /// </summary> 
-        public float BaseRectanlge
+        public float BaseRectangle
         {
             get
             {
@@ -58,7 +58,8 @@ namespace CalcularPerimetro
         /// <param name="height"></param>
         public Rectangle(float baseRectangle, float height)
         {
-            BaseRectanlge = baseRectangle;
+            BaseRectangle = baseRectangle;
+            Height = height;
         }
         /// <summary>
         /// Calculate perimeter
@@ -66,7 +67,7 @@ namespace CalcularPerimetro
         /// <returns>Return float perimeter</returns>
         public override float CalculatePerimeter()
         {
-            return 3 * baseRectangle;
+            return (2 * BaseRectangle + 2 * Height) ;
         }
         /// <summary>
         /// Calculate area
@@ -74,7 +75,7 @@ namespace CalcularPerimetro
         /// <returns>Return float area</returns>
         public override float CalculateArea()
         {
-            return baseRectangle * Perimeter / 2;
+            return BaseRectangle*Height;
         }
         #endregion
 
